@@ -45,7 +45,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated"><strong>Last Updated:</strong> January 2026</p>
+        <p class="last-updated"><strong>Last Updated:</strong> January 27, 2026</p>
         
         <p>This Privacy Policy describes how Smart Weather Forecast ("we", "our", or "the app") collects, uses, and protects your information when you use our mobile application.</p>
         
@@ -81,6 +81,15 @@
             <li>Weather forecasts</li>
         </ul>
         
+        <h3>1.4 Crash Reports and Error Data</h3>
+        <p>To improve app stability and fix bugs, the app automatically collects crash reports and error information when the app encounters errors or crashes. This data includes:</p>
+        <ul>
+            <li><strong>Technical Information:</strong> Stack traces, error messages, and crash logs</li>
+            <li><strong>Device Information:</strong> Device model, Android version, app version</li>
+            <li><strong>App State:</strong> Information about what the app was doing when the error occurred</li>
+        </ul>
+        <p><strong>Note:</strong> Crash reports do not contain personal information such as your name, email, or location. They only include technical data necessary to identify and fix bugs.</p>
+        
         <h2>2. How We Use Your Information</h2>
         
         <h3>2.1 Location Data</h3>
@@ -108,6 +117,15 @@
             <li>Provide faster loading times</li>
         </ul>
         
+        <h3>2.4 Crash Reports</h3>
+        <p>Crash reports are used solely to:</p>
+        <ul>
+            <li>Identify and fix bugs in the app</li>
+            <li>Improve app stability and performance</li>
+            <li>Prevent future crashes</li>
+        </ul>
+        <p><strong>Important:</strong> Crash reports are automatically sent to Firebase Crashlytics (a Google service) for analysis. This data helps us improve the app but does not include any personal information.</p>
+        
         <h2>3. Data Sharing and Third Parties</h2>
         
         <h3>3.1 Weather API Providers</h3>
@@ -118,33 +136,45 @@
         </ul>
         <p>These providers use your location coordinates solely to return weather data. Please review their privacy policies to understand how they handle data.</p>
         
-        <h3>3.2 No Data Sale or Advertising</h3>
+        <h3>3.2 Firebase Crashlytics</h3>
+        <p>To improve app stability, the app uses <strong>Firebase Crashlytics</strong> (a Google service) to collect and analyze crash reports. Crash reports include:</p>
+        <ul>
+            <li>Technical error information (stack traces, error messages)</li>
+            <li>Device information (model, Android version, app version)</li>
+            <li>App state at the time of crash</li>
+        </ul>
+        <p>This data is sent to Google's Firebase servers and is subject to <a href="https://firebase.google.com/support/privacy" target="_blank">Google's Privacy Policy</a> and <a href="https://firebase.google.com/terms" target="_blank">Firebase Terms of Service</a>.</p>
+        <p><strong>Important:</strong> Crash reports do not contain personal information, location data, or any identifiable user information. They are purely technical data used for debugging purposes.</p>
+        
+        <h3>3.3 No Data Sale or Advertising</h3>
         <p>We do <strong>NOT</strong>:</p>
         <ul>
             <li>Sell your personal information to third parties</li>
             <li>Share your data with advertisers</li>
             <li>Use your data for advertising purposes</li>
-            <li>Collect data for analytics or tracking</li>
-            <li>Share your information with any other third parties except weather API providers</li>
+            <li>Use analytics or tracking for advertising or marketing</li>
+            <li>Share your information with any other third parties except weather API providers and Firebase Crashlytics (for crash reporting only)</li>
         </ul>
         
         <h2>4. Data Storage and Security</h2>
         
         <h3>4.1 Local Storage</h3>
-        <p>All your data is stored locally on your device using Android's SharedPreferences and local cache. This includes:</p>
+        <p>Most of your data is stored locally on your device using Android's SharedPreferences and local cache. This includes:</p>
         <ul>
             <li>Location preferences</li>
             <li>App settings</li>
             <li>Cached weather data</li>
         </ul>
-        <p>No data is stored on our servers or cloud services.</p>
+        <p><strong>Crash Reports:</strong> Crash reports are sent to Firebase Crashlytics (Google's servers) for analysis. These reports are stored on Google's servers and are subject to Google's data retention policies. However, they do not contain personal information.</p>
+        <p><strong>No Personal Data on Our Servers:</strong> We do not store any personal information, location data, or user preferences on our servers.</p>
         
         <h3>4.2 Data Transmission</h3>
-        <p>When the app communicates with weather API providers:</p>
+        <p>When the app communicates with weather API providers and Firebase Crashlytics:</p>
         <ul>
             <li>All data transmission is encrypted using HTTPS</li>
-            <li>Only location coordinates are transmitted (no personal identifiers)</li>
-            <li>No personal information is included in API requests</li>
+            <li>Only location coordinates are transmitted to weather APIs (no personal identifiers)</li>
+            <li>Only technical crash data is transmitted to Firebase (no personal information)</li>
+            <li>No personal information is included in any API requests</li>
         </ul>
         
         <h3>4.3 Data Backup</h3>
@@ -168,67 +198,17 @@
             <li>Notifications only display weather information, no personal data</li>
         </ul>
         
-        <h3>5.3 Data Deletion Request</h3>
-        <p><strong>Smart Weather Forecast</strong> stores all data locally on your device. Since we do not maintain any servers or external databases, you have full control over your data deletion.</p>
-        
-        <h4>How to Request Data Deletion</h4>
-        <p>You can delete all your data at any time using one of the following methods:</p>
-        
-        <h4>Method 1: Uninstall the App (Recommended)</h4>
-        <ol>
-            <li>Open your device's Settings</li>
-            <li>Go to "Apps" or "Application Manager"</li>
-            <li>Find "Smart Weather Forecast"</li>
-            <li>Tap "Uninstall"</li>
-            <li>Confirm the uninstallation</li>
-        </ol>
-        <p><strong>Result:</strong> All app data, including location preferences, settings, and cached weather data, will be permanently deleted.</p>
-        
-        <h4>Method 2: Clear App Data</h4>
-        <ol>
-            <li>Open your device's Settings</li>
-            <li>Go to "Apps" or "Application Manager"</li>
-            <li>Find "Smart Weather Forecast"</li>
-            <li>Tap "Storage" or "Storage & cache"</li>
-            <li>Tap "Clear Data" or "Clear Storage"</li>
-            <li>Confirm the action</li>
-        </ol>
-        <p><strong>Result:</strong> All app data will be deleted, but the app will remain installed.</p>
-        
-        <h4>Method 3: Clear App Cache</h4>
-        <ol>
-            <li>Open your device's Settings</li>
-            <li>Go to "Apps" or "Application Manager"</li>
-            <li>Find "Smart Weather Forecast"</li>
-            <li>Tap "Storage" or "Storage & cache"</li>
-            <li>Tap "Clear Cache"</li>
-        </ol>
-        <p><strong>Result:</strong> Cached weather data will be deleted, but your preferences and settings will remain.</p>
-        
-        <h4>What Data Will Be Deleted</h4>
-        <p>When you delete app data, the following information will be permanently removed:</p>
+        <h3>5.3 Data Deletion</h3>
+        <p>You can delete all app data at any time by:</p>
         <ul>
-            <li><strong>Location Data:</strong> Saved location preferences, city names, coordinates</li>
-            <li><strong>App Preferences:</strong> Language settings, unit preferences (temperature, wind, pressure, etc.)</li>
-            <li><strong>Weather Data:</strong> Cached weather information</li>
-            <li><strong>Notification Settings:</strong> Notification preferences</li>
-            <li><strong>Search History:</strong> Recent location searches</li>
+            <li>Uninstalling the app (removes all local data)</li>
+            <li>Clearing app data in your device settings</li>
+            <li>Clearing app cache in your device settings</li>
         </ul>
-        
-        <h4>Data Retention and Storage</h4>
-        <p><strong>Important:</strong> Since all data is stored locally on your device:</p>
-        <ul>
-            <li>No data is stored on our servers - there is no server-side data to delete</li>
-            <li>Data is deleted immediately when you uninstall the app or clear app data</li>
-            <li>No data retention period - deletion is permanent and immediate</li>
-            <li>We do not have access to your data, so no action is required from us</li>
-        </ul>
-        
-        <h4>Contact Us for Assistance</h4>
-        <p>If you need help with data deletion or have questions about your data, please contact us at <strong>mmfbahmutsk@gmail.com</strong>. While we cannot access your local data, we can provide guidance on how to delete it.</p>
+        <p><strong>Note:</strong> Crash reports that have already been sent to Firebase Crashlytics cannot be deleted by uninstalling the app, as they are stored on Google's servers. However, these reports do not contain any personal information.</p>
         
         <h3>5.4 Access to Your Data</h3>
-        <p>Since all data is stored locally on your device, you have direct access to it. The app does not maintain any external database of user information.</p>
+        <p>Since all data is stored locally on your device, you have direct access to it. The app does not maintain any external database of user information. Crash reports are stored on Firebase servers but do not contain personal information.</p>
         
         <h2>6. Children's Privacy</h2>
         <p>Our app does not knowingly collect personal information from children under the age of 13. The app is suitable for all ages and does not require user registration or personal information beyond location data (which is optional).</p>
